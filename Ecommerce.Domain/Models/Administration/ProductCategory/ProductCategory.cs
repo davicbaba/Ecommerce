@@ -6,9 +6,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Ecommerce.Domain.Models
+namespace Ecommerce.Domain.Models.Administration.Administration
 {
-    public class ProductCategory : RootEntity
+    public class ProductCategory : AggregateRoot
     {
         public ProductCategoryId Id;
         public ProductCategoryOrder Order;

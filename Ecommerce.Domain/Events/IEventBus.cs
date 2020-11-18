@@ -4,14 +4,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Ecommerce.Domain.Models.Base
+namespace Ecommerce.Domain.Events
 {
-    public abstract class Entity
+    public interface IEventBus
     {
-        protected bool IsValid()
-        {
-
-        }
+        Task Publish(List<IDomainEvent> events);
 
     }
 }

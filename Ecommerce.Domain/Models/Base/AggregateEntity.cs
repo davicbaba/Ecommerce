@@ -6,9 +6,12 @@ using System.Threading.Tasks;
 
 namespace Ecommerce.Domain.Models.Base
 {
-    public class RootEntity : Entity
+    public abstract class AggregateEntity
     {
-
+        protected bool IsValid()
+        {
+            return true;
+        }
 
     }
 }

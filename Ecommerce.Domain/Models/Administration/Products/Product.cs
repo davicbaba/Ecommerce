@@ -6,9 +6,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Ecommerce.Domain.Models.Products
+namespace Ecommerce.Domain.Models.Administration.Products
 {
-    public class Product : RootEntity
+    public class Product : AggregateRoot
     {
         public ProductDescription Description;
         public ProductId ProductId;
