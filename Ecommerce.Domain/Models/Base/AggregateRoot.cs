@@ -9,6 +9,8 @@ namespace Ecommerce.Domain.Models.Base
 {
     public class AggregateRoot : AggregateEntity
     {
+        public string tempid;
+
         private List<IDomainEvent> recordedDomainEvents = new List<IDomainEvent>();
 
         public List<IDomainEvent> PullDomainEvents()

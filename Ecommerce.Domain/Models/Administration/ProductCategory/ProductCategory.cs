@@ -17,5 +17,10 @@ namespace Ecommerce.Domain.Models.Administration.Administration
             Id = id;
             Order = order;
         }
+
+        protected ProductCategory()
+        {
+
+        }
     }
 }

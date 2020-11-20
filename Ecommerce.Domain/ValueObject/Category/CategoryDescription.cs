@@ -10,7 +10,7 @@ namespace Ecommerce.Domain.ValueObject.Category
     {
 
         public string Name { get; }
-        public string Description { get; }
+        public string Description { get; set; }
 
         public CategoryDescription(string name, string description)
         {
@@ -18,5 +18,8 @@ namespace Ecommerce.Domain.ValueObject.Category
             Description = description;
         }
 
+        protected CategoryDescription()
+        {
+        }
     }
 }

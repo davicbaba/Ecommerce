@@ -11,14 +11,17 @@ namespace Ecommerce.Domain.Models.Administration.Products
     public class Product : AggregateRoot
     {
         public ProductDescription Description;
-        public ProductId ProductId;
+        public ProductId Id;
 
-        public Product(ProductId productId, ProductDescription description)
+        public Product(ProductId id, ProductDescription description)
         {
             Description = description;
-            ProductId = productId;
+            Id = id;
         }
 
+        protected Product()
+        {
 
+        }
     }
 }

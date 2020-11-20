@@ -16,7 +16,9 @@ namespace Ecommerce.Domain.ValueObject.Products.ProductCategory
             ProductId = productId;
             CategoryId = categoryId;
         }
-
+        protected ProductCategoryId()
+        {
+        }
 
     }
 }

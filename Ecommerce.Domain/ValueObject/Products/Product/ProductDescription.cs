@@ -15,7 +15,9 @@ namespace Ecommerce.Domain.ValueObject.Products.Product
             Description = description;
             LargeDescription = largeDescription;
         }
-
+        protected ProductDescription()
+        {
+        }
         public string Name { get; }
         public string Description { get;}
         public string LargeDescription { get; }

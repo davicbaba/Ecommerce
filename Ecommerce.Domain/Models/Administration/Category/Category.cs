@@ -11,17 +11,23 @@ namespace Ecommerce.Domain.Models.Administration.Category
 {
     public class Category : AggregateRoot
     {
-        public CategoryId Id;
-        public CategoryDescription Description;
+        public CategoryDescription Description { get; set; }
+
+        public CategoryId Id { get; set; }
 
         public Category(CategoryId id, CategoryDescription description)
         {
             Description = description;
             Id = id;
 
-            CategoryCreated categoryCreated = new(id.Id, description.Name, description.Description);
+            CategoryCreated categoryCreated = new(id.Value, description.Name, description.Description);
 
             base.Record(categoryCreated);
+        }
+
+        protected Category()
+        {
+
         }
     }
 }

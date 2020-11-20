@@ -8,11 +8,14 @@ namespace Ecommerce.Domain.ValueObject.Products.Product
 {
     public record ProductId 
     {
-        public string Id { get;}
+        public string Value { get;}
 
-        public ProductId(string id)
+        public ProductId(string value)
         {
-            Id = id;
+            Value = value;
+        }
+        protected ProductId()
+        {
         }
     }
 }

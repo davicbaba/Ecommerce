@@ -8,11 +8,15 @@ namespace Ecommerce.Domain.ValueObject.Products.ProductCategory
 {
     public record ProductCategoryOrder
     {
-        public int Order { get; }
+        public int Value { get; }
 
-        public ProductCategoryOrder(int order)
+        public ProductCategoryOrder(int value)
         {
-            Order = order;
+            Value = value;
+        }
+
+        protected ProductCategoryOrder()
+        {
         }
     }
 }

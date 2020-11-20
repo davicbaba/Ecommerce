@@ -8,11 +8,15 @@ namespace Ecommerce.Domain.ValueObject.Category
 {
     public record CategoryId
     {
-        public string Id { get; }
+        public string Value { get; }
 
-        public CategoryId(string id)
+        public CategoryId(string value)
         {
-            Id = id;
+            Value = value;
+        }
+
+        protected CategoryId()
+        {
         }
     }
 }
